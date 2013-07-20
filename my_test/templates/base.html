@@ -10,7 +10,7 @@
             width: 1850px;
             height: 2200px;
             margin: 0px 0px 0px 0px;
-            <!--padding: 0.5%;-->
+            /*padding: 0.5%;*/
         }
 
         #page {
@@ -70,6 +70,24 @@
             margin: -2037px 1600px;
             padding: 1%;
         }
+    
+        #left_panel1
+        {
+            padding:5px;
+            text-align:center;
+            background-color:#ccffcc; /*#e5eecc;*/
+            border:solid 3px #c3c3c3;
+            border-radius: 15px;
+        }
+        #left_panel2
+        {
+            padding:20px;
+            /*display:none;*/   /*turn off click function*/
+            text-align:center;
+            background-color:#ccffcc; /*#e5eecc;*/
+            border:solid 3px #c3c3c3;
+            border-radius: 15px;
+        }
     </style>
 </head>
 
@@ -80,7 +98,7 @@
 
     <div id="topbar">
         {% block topbar %}
-        <img src="{% static "assets/images/NSLSII.jpeg" %}" width="220" height="120" align="right">
+        <img src="/static/images/basic/NSLSII.jpeg" width="220" height="120" align="right">
         <p> <h1 style="font-family: times; font-style:normal; font-size:40pt; color: white"> <i style="font-size: 40pt">PyLight</i>: NSLSII Data Analysis Engine </p> 
         <!--<img src="{% static "assets/images/bnl-logo.jpeg" %}" width="200" height="80" align="right">-->
         <!--<img src="{% static "assets/images/NSLSII.jpeg" %}" width="180" height="80" align="right">-->
@@ -94,31 +112,22 @@
     </div>    
 
 
-    <!-- <hr width=1300px size=10px color=#FF0000> -->
-
-    <!--<div id="page"> -->
-        <div id="leftbar">
-            {% block leftbar %}
-            <ul>
-                <!--<li><a href="/articles/all">Articles</a></li>-->
-                <!-- <li><a href="/admin/">Admin</a></li> -->
-            </ul>
-            {% endblock %}
-        </div>
+    <div id="leftbar">
+        {% block leftbar %}
+            <div id="left_panel1"></div> 
+            <div id="left_panel2"></div>
+        {% endblock %}
+    </div>
 
             
-        <div id="rightbar">
-            {% block rightbar %}
-            <ul>
-                <!--<li><a href="/articles/all">Articles</a></li>-->
-                <!-- <li><a href="/admin/">Admin</a></li> -->
-            </ul>
-            {% endblock %}
-        </div>
+    <div id="rightbar">
+        {% block rightbar %}
+        {% endblock %}
+    </div>
 
-        <div id="content">
-            {% block content %}This is the content area {% endblock %}
-        </div>
+    <div id="content">
+        {% block content %}This is the content area {% endblock %}
+    </div>
 
     </div>
 </body>
