@@ -2,7 +2,7 @@
 {% load static %}
 {% block leftbar %}
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
 </script>
 <script> 
     $(document).ready(function(){
@@ -24,12 +24,12 @@
     #panel
     {
         padding:50px;
-        display:none;
+        /*display:none;*/
     }
-</style>
-<div id="flip"> <h2>All Beamlines</h2> </div>
-<div id="panel" align="left">
-    <h3>Early beamlines</h3>
+</style>-->
+<div id="left_panel1"> <h2>All Beamlines</h2> </div>
+<div id="left_panel2" align="left">
+    <h3>Project Beamlines</h3>
     <h2><a href="/articles/all_functions">HXN</a></h2>
     <h2>SRX</h2>
     <h2>CSX-1</h2>
@@ -37,7 +37,7 @@
     <h2>CHX</h2>
     <h2>XPD</h2>
     <h2>IXS</h2>
-    <h3>Other beamlines</h3>
+    <h3>More Beamlines</h3>
     <h2><a href="/articles/all">FXI</a></h2>
     <h2>...</h2>
 </div>
@@ -61,7 +61,7 @@
     The facility will be a key resource for researchers at Brookhaven’s Center for Functional Nanomaterials, allowing for analysis of new materials that are expected to transform the nation’s energy future. Construction of the NSLS-II’s ring building began in March 2009. If plans are carried through as proposed, the new facility will begin operating in 2015.
 
     In 2009, NSLS-II received (50 million in accelerated funding under the American Recovery and Reinvestment Act. During its construction, the project is expected to create more than 1,000 construction and 300 scientific and engineering jobs. When operating, NSLS-ll will support more than 500 permanent positions.)</h3></p>
-<img src="{% static "assets/images/NSLSII.jpeg" %}" width="500" height="150">
+<img src="{% static "images/basic/NSLSII.jpeg" %}" width="500" height="150">
 </div>
 
 {% endblock %}
