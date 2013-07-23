@@ -1,16 +1,9 @@
-{% extends "base.html" %}
+{% extends "all_functions.html" %}
 
-{% block leftbar %}
-<ul>
-    <h3><a href="/articles/all_beamlines">Home</a></h3>
-    <h3><a href="/articles/all_functions">HXN</a></h3>
-    <!--<h3><a href="/articles/create">Create a new Job</a></h3>-->
-</ul>
-{% endblock %}
 
 {% block rightbar %}
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
 </script>
 
 <script> 
@@ -35,13 +28,12 @@ $(document).ready(function(){
         padding:1px;
         display:none;
     }
-</style>
+</style>-->
 
-<h2 id="flip" align="center" style="color:green">History of tomography</h2>
-<div id="panel">
+<h2 id="right_panel1" align="center" style="color:green">History of tomography</h2>
+<div id="right_panel2">
 <ol>
 {% for item in articles %}
-    <!--<p><a href="/articles/get/{{ item.id }}/" style="font-size:18px;text-align=center">{{ item.id }} {{ item.title }}</a></p>-->
     <div style="width:90%;height:80px;background-color:#c2d1ff;text-align:center; border:solid 0px #000000; border-radius:20px" align="left">
     <li style="color:green"> {{ item.title }} 
     <a href="/articles/get/{{ item.id }}/" style="font-size:30px;text-align:left"><img src="/static/images/eye_icon.png" width="16" ></a>
