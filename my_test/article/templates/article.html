@@ -1,10 +1,4 @@
-{% extends "base.html" %}
-
-{% block leftbar %}
-<ul>
-    <h3><a href="/articles/all">Tomography</a></h3>
-</ul>    
-{% endblock %}
+{% extends "articles.html" %}
 
 
 {% block content %}
@@ -57,8 +51,8 @@
     
     <div align="center">
         <h2> Results and Images </h2>
-        <p><img src="/static/images/user1_{{article.id}}.jpeg" width="350" height="350" align="center"></p>
-        <p> <a href="/static/images/user1_{{article.save_to}}">Download Images</a>
+        <p><img src="/static/images/user1_{{article.title}}.jpeg" width="350" height="350" align="center"></p>
+        <p> <a href="/static/images/user1_{{article.title}}.jpeg">Download Images</a>
     </div>
 
 <hr>
@@ -72,53 +66,6 @@
 
     
 {% endblock %}
-
-
-{% block rightbar %}
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
-</script>
-
-<script> 
-$(document).ready(function(){
-    $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-});
-});
-</script>
-
-<style type="text/css"> 
-    #panel,#flip
-    {
-        padding:5px;
-        text-align:center;
-        background-color:#ccffcc;/*#99b2ff;/*#e5eecc;*/
-        border:solid 0px #000000;/*#c3c3c3;*/
-        border-radius: 15px;
-    }
-    #panel
-    {
-        padding:10px;
-        display:none;
-    }
-</style>
-
-<h2 id="flip" align="center" style="color:green">History of tomography</h2>
-<div id="panel">
-<ol>
-{% for item in articles %}
-    <div style="width:95%;height:80px;background-color:#c2d1ff;text-align:center; border:solid 0px #000000; border-radius:20px" align="left">
-    <li style="color:green">{{ item.title }}  
-        <a href="/articles/get/{{ item.id }}/" style="font-size:30px;text-align:left"><img src="/static/images/eye_icon.png" width="16" ></a>
-        <a href="/articles/delete/{{article.id}}"><img src="/static/images/icon_delete.gif" width="16" ></a>
-        <p style="font-size:12px">{{ item.pub_date }}</p>
-    </li>
-    </div> 
-    <hr>
-{% endfor %}
-</div>
-</ol>
-{% endblock %}
-
 
 
 
