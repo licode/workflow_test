@@ -1,0 +1,66 @@
+{% extends "dpcbase.html" %}
+
+
+{% block content %}
+
+    <h2 align="center">Job created: {{ article.title }}</h2>
+    <form action="/dpc/create/" method="post" enctype="multipart/form-data" style="text-align:left">{% csrf_token %}
+
+         <div style="font-size:22px;text-align:center">
+        <table border="0.1" width=600 height=300 align="center">
+            <tr>
+                <th>parameter</th>
+                <th>previous value</th>
+                <th>new value</th>
+            </tr>
+            <tr>
+                <td>title</td> 
+                <td>{{article.title}}</td>
+                <td>{{form.title}}</td>
+            </tr>
+            <tr>
+                <td>parameter1</td> 
+                <td>{{article.parameter1}}</td>
+                <td>{{form.parameter1}}</td>
+            </tr>
+            <tr>
+                <td>parameter2</td> 
+                <td>{{article.parameter2}}</td>
+                <td>{{form.parameter2}}</td>
+            </tr>
+            <tr>
+                <td>notes</td> 
+                <td>{{article.notes}}</td>
+                <td>{{form.notes}}</td>
+            </tr>
+        </table>
+        <input size="100%" type="submit" name="submit" value="Create a job">    
+        </div>    
+    <!--<p style="font-size:22px">Edit this job. <a href="/articles/delete/{{article.id}}"><img src="/static/images/icon_add.gif" width="20" ></a></p>
+    <p style="font-size:22px">Delete this job. <a href="/articles/delete/{{article.id}}"><img src="/static/images/icon_delete.gif" width="20" ></a></p>-->
+    
+    <h3><a href="/dpc/run/{{article.id}}">Submit this job</a></h3>
+    
+    <hr>
+    
+    <div align="center">
+        <h2>Previous Results and Images </h2>
+        <p><img src="/static/images/user1_{{article.id}}.jpeg" width="350" height="350" align="center"></p>
+    </div>
+
+    <hr>
+    
+    <div align="center">
+        <h2>All Comments</h2>
+        {% for c in article.comment_set.all %}
+        <p>{{c.name}}: {{c.body}}</p>
+        {% endfor %}
+    </div>
+
+    <p><a href="/dpc/add_comment/{{article.id}}">Add Comment</a></p>
+
+    
+{% endblock %}
+
+
+

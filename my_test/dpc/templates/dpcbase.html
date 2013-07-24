@@ -1,0 +1,61 @@
+{% extends "all_functions.html" %}
+
+
+{% block rightbar %}
+
+
+<h2 id="right_panel1" align="center" style="color:green">History of DPC</h2>
+<div id="right_panel2">
+<ol>
+{% for item in articles %}
+    <div style="width:90%;height:80px;background-color:#c2d1ff;text-align:center; border:solid 0px #000000; border-radius:20px" align="left">
+    <li style="color:green"> {{ item.title }} 
+    <a href="/dpc/get/{{ item.id }}/" style="font-size:30px;text-align:left"><img src="/static/images/eye_icon.png" width="16" ></a>
+    <a href="/dpc/delete/{{ item.id }}"><img src="/static/images/icon_delete.gif" width="16" ></a>
+    <p style="font-size:12px">{{ item.pub_date }}</p>
+    </li>
+    </div>
+    <hr width="90%" align="left">
+{% endfor %}
+</ol>
+</div>
+{% endblock %}
+
+
+{% block content %}
+
+    <h2 align="center">Differential Phase Contrast Imaging</h2>
+    <form action="/dpc/create/" method="post" enctype="multipart/form-data" style="text-align:left">{% csrf_token %}
+    
+        <!--<h2>{{form.as_ul}}</h2>-->       
+        <div style="font-size:22px; text-align:center">
+        <table border="0.1" width=600 height=300 align="center">
+            <tr>
+                <th>parameter</th>
+                <th>value</th>
+            </tr>
+            <tr>
+                <td>title</td> 
+                <td>{{form.title}}</td>
+            </tr>
+            <tr>
+                <td>parameter1</td> 
+                <td>{{form.parameter1}}</td>
+            </tr>
+            <tr>
+                <td>parameter2</td> 
+                <td>{{form.parameter2}}</td>
+            </tr>
+            <tr>
+                <td>notes</td> 
+                <td>{{form.notes}}</td>
+            </tr>
+        </table>
+    
+        <input  size="4" type="submit" name="submit" value="Create a job">
+    </div> 
+    </form>
+
+{% endblock %}
+
+
