@@ -10,12 +10,7 @@ urlpatterns = patterns('',
     #(r'^fluorescence_fit/', include('fluorescence_fit.urls')),
 
     (r'^articles/', include('article.urls')),
-    #url(r'^hello/$', 'article.views.hello'),
-    #url(r'^hello_template/$', 'article.views.hello_template'),
-    #url(r'^hello_template_simple/$', 'article.views.hello_template_simple'),
-    #url(r'^hello_class_view/$', HelloTemplate.as_view()), #class based call
-    #url(r'^/$', 'django_test.views.home', name='home'),
-    # url(r'^django_test/', include('django_test.foo.urls')),
+    (r'^dpc/', include('dpc.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
@@ -31,4 +26,7 @@ urlpatterns = patterns('',
     url(r'^accounts/invalid/$', 'my_test.views.invalid_login'),
     url(r'^accounts/register/$', 'my_test.views.register_user'),
     url(r'^accounts/register_success/$', 'my_test.views.register_success'),
+
+    # basic html to include all beamlines, this should be shared by each individual tool
+    url(r'^accounts/all_beamlines/$', 'my_test.views.all_beamlines'),
 )

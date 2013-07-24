@@ -56,4 +56,5 @@ def register_user(request):
 def register_success(request):
     return render_to_response('register_success.html')
 
-
+def all_beamlines(request):
+    return render_to_response('all_beamlines.html')

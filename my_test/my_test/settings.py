@@ -114,6 +114,7 @@ WSGI_APPLICATION = 'my_test.wsgi.application'
 TEMPLATE_DIRS = (
     '../my_test/templates',
     '../my_test/article/templates',
+    '../my_test/dpc/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -131,7 +132,8 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'article',
-    'fluorescence_fit',
+    'dpc',
+    #'fluorescence_fit',
     #'WorkflowPrototype',
 )
 
