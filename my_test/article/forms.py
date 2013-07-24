@@ -1,5 +1,5 @@
 from django import forms
-from models import Article, Comment, DPC_data
+from models import Article, Comment
 
 class ArticleForm(forms.ModelForm):
 
@@ -15,8 +15,3 @@ class CommentForm(forms.ModelForm):
         fields = ('name', 'body')
 
 
-class DPC_Form(forms.ModelForm):
-
-    class Meta:
-        model = DPC_data
-        fields = ('title', 'notes', 'parameter1', 'parameter2')
