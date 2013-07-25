@@ -34,7 +34,7 @@
             float: center;
             width: 1850px;
             height: 22px;
-            border: 1px; solid #300;
+            border: 0px; solid #300;
 	        background-color: #000000;
             margin: 0px 0px;
             padding: 1%;
@@ -127,23 +127,22 @@
 
     <div id="secondbar">
         {% block secondbar %}
-        <p style="font-family: times; color: white" align="right"> <a style="font-family: times; font-size:15pt; color: white;" href="/accounts/login/" align="right">logout</a> {{username}}</p>
         {% endblock %}
     </div>    
 
 
     <div id="leftbar">
         {% block leftbar %}
-            <div id="left_panel1"></div> 
-            <div id="left_panel2"></div>
+            <!--<div id="left_panel1"></div> 
+            <div id="left_panel2"></div>-->
         {% endblock %}
     </div>
 
             
     <div id="rightbar">
         {% block rightbar %}
-            <div id="right_panel1"></div> 
-            <div id="right_panel2"></div>
+            <!--<div id="right_panel1"></div> 
+            <div id="right_panel2"></div>-->
         {% endblock %}
     </div>
 

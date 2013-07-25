@@ -13,7 +13,7 @@ class JobWrapper(object):
         return
 
 
-    def readDB(self, toolname, jobID):
+    def readDB(self, toolname, jobID, username):
         """
         read data from django database
         pass jobID to obtain parameters
@@ -22,7 +22,7 @@ class JobWrapper(object):
             cur_obj = Article.objects.get(id=jobID)
 
             job = str(cur_obj.algorithm)
-            username = "user1"
+            username = username
             passcode = "pw"
             title = str(cur_obj.title)
             file_p = "../static/images/"

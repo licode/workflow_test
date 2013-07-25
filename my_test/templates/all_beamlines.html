@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block secondbar %}
+        <p><h3 style="font-family: times; color: white" align="right"> Welcome, {{fullname}}. <a style="font-family: times; font-size:15pt; color: white;" href="/accounts/login/" align="right">Logout.</a></p>
+{% endblock %}
+        
+        
 {% block leftbar %}
 
 <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">

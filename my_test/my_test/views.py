@@ -19,7 +19,7 @@ def auth_view(request):
 
     if user is not None:
         auth.login(request, user)
-        return HttpResponseRedirect('/articles/all')#/accounts/loggedin')
+        return HttpResponseRedirect('/accounts/all_beamlines')#/accounts/loggedin')
     else:
         return HttpResponseRedirect('/accounts/invalid')
 
@@ -57,4 +57,7 @@ def register_success(request):
     return render_to_response('register_success.html')
 
 def all_beamlines(request):
-    return render_to_response('all_beamlines.html')
+    return render_to_response('all_beamlines.html',
+            {'fullname': request.user.username})
+
+

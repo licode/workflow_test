@@ -7,6 +7,7 @@ def get_upload_file_name(instance, filename):
     #return "uploaded_files/%s_%s" % (str(time()).replace('.','_'), filename)
     return "uploaded_files/%s" % (filename)
 
+
 # Create your models here.
 class Article(models.Model):
     title = models.CharField(max_length=200)
@@ -19,6 +20,12 @@ class Article(models.Model):
     pub_date = models.DateTimeField('date published', default=timezone.now())
     likes = models.IntegerField(default=0)
     upload_file = models.FileField(upload_to=get_upload_file_name)
+
+    #def get_name(self, request):
+    #    self.myname = request.user.username
+    #    return
+
+    myname = models.CharField(max_length=200, default="none")  ###username
 
     def __unicode__(self):
         return self.title
