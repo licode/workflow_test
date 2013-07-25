@@ -89,9 +89,9 @@ def run_job(request, article_id=1):
 
     from job_manager.job_wrapper import JobWrapper
     JW = JobWrapper()
-    JW.readDB(article_id)
-    JW.run_job()
-    JW.saveDB('Article')
+    JW.readDB("Article", article_id)
+    JW.run_joblist()
+    JW.saveDB()
 
     return render_to_response('see_result.html', args)
 
