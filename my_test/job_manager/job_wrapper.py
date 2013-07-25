@@ -8,59 +8,74 @@ import json
 class JobWrapper(object):
 
     def __init__(self):
-        pass
+        self.job_list = []
+        self.message_list = []
+        return
 
 
-    def readDB(self, jobID):
+    def readDB(self, toolname, jobID):
         """
         read data from django database
         pass jobID to obtain parameters
         """
-        cur_obj = Article.objects.get(id=jobID)
+        if toolname=="Article":
+            cur_obj = Article.objects.get(id=jobID)
 
-        self.angle_start = int(cur_obj.angle_start)
-        self.angle_end = int(cur_obj.angle_end)
-        self.angle_step = int(cur_obj.angle_step)
+            job = str(cur_obj.algorithm)
+            username = "user1"
+            passcode = "pw"
+            title = str(cur_obj.title)
+            file_p = "../static/images/"
 
-        self.job = str(cur_obj.algorithm)
-        self.username = "user1"
-        self.passcode = "pw"
-        self.title = str(cur_obj.title)
-        self.file_p = "../static/images/"
+            output_file = str(username)+"_"+str(title)+".jpeg"
+            information = str(int(cur_obj.angle_start))+" "+str(int(cur_obj.angle_end))+" "+str(int(cur_obj.angle_step))
 
-        self.output_file = str(self.username)+"_"+str(self.title)+".jpeg"
-        print self.output_file
-        self.information = str(int(cur_obj.angle_start))+" "+str(int(cur_obj.angle_end))+" "+str(int(cur_obj.angle_step))
+            message = {"instrument": "HXN",         ###save as dictionary for activeMQ
+                "job": job,
+                "user": username,
+                "passcode": passcode,
+                "input_data_file": "filename.png",
+                "output_data_file": file_p+output_file,
+                "information": information,
+                "method": ""}
 
-        self.tool_id = jobID
+            self.message_list.append(message)
+
+            job_infor = {"jobname": toolname,
+                    "job_id":jobID}
+            self.job_list.append(job_infor)
+
+        else:
+            pass
 
         return
 
 
-    def run_job(self):
+    def run_job(self, message):
         """
         call ActiveMQ
         """
-        message = {"instrument": "HXN",
-            "job": self.job,
-            "user": self.username,
-            "passcode": self.passcode,
-            "input_data_file": "filename.png",
-            "output_data_file": self.file_p+self.output_file,
-            "information": self.information,
-            "method": ""
-        }
-
-        wu = Workflow_user(brokers, self.username, self.passcode)
+        username = message['user']
+        passcode = message['passcode']
+        wu = Workflow_user(brokers, username, passcode)
         msg = json.dumps(message)
         wu.submit(msg)
 
         return
 
 
-    def saveDB(self, tool_name):
+    def run_joblist(self):
         """
-        save to new database
+        run multiple jobs through activeMQ
+        """
+
+        for message in self.message_list:
+            self.run_job(message)
+
+
+    def saveDB(self):
+        """
+        save joblist to new database
         """
         job_obj = JobData.objects.all()
         new_id = len(job_obj)+1
@@ -68,21 +83,14 @@ class JobWrapper(object):
 
         newjob = JobData()
 
-        newjob.job_id = new_id
-        newjob.tool_name = tool_name
-        newjob.tool_id = self.tool_id
-        newjob.save()
+        for job in self.job_list:
+            newjob.job_id = new_id
+            newjob.tool_name = job['jobname']
+            newjob.tool_id = job['job_id']
+            newjob.save()
 
         return
 
-
-
-    def addDB(self, new_name):
-        """
-        add different tools into the job database
-        same job ID
-        """
-        pass
 
 
 
