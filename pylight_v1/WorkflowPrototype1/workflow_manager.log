@@ -1,0 +1,755 @@
+2013-07-10 17:20:19,523 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-10 17:20:19,523 Established connection to host localhost, port 61613
+2013-07-10 17:20:19,524 cluster subscribes queue /queue/cluster
+2013-07-10 17:20:19,524 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-10 17:20:42,277 qsub job
+2013-07-10 17:20:43,535 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:20:43,535 complete one job
+2013-07-10 17:22:53,590 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:22:53,590 complete one job
+2013-07-10 17:23:04,815 qsub job
+2013-07-10 17:23:12,463 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-10 17:23:12,463 Established connection to host localhost, port 61613
+2013-07-10 17:23:12,464 cluster subscribes queue /queue/cluster
+2013-07-10 17:23:12,464 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-10 17:23:34,472 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:23:34,472 complete one job
+2013-07-10 17:23:44,718 qsub job
+2013-07-10 17:25:22,483 qsub job
+2013-07-10 17:25:22,517 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:25:22,517 complete one job
+2013-07-10 17:26:36,546 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:26:36,546 complete one job
+2013-07-10 17:26:48,090 qsub job
+2013-07-10 17:26:58,963 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-10 17:26:58,964 Established connection to host localhost, port 61613
+2013-07-10 17:26:58,964 cluster subscribes queue /queue/cluster
+2013-07-10 17:26:58,964 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-10 17:27:21,238 qsub job
+2013-07-10 17:27:22,974 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:27:22,974 complete one job
+2013-07-10 17:28:46,388 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:28:46,388 complete one job
+2013-07-10 17:28:57,935 qsub job
+2013-07-10 17:29:24,252 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-10 17:29:24,253 Established connection to host localhost, port 61613
+2013-07-10 17:29:24,253 cluster subscribes queue /queue/cluster
+2013-07-10 17:29:24,254 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-10 17:29:47,648 qsub job
+2013-07-10 17:29:48,263 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:29:48,263 complete one job
+2013-07-10 17:31:20,429 qsub job
+2013-07-10 17:31:22,305 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:31:22,305 complete one job
+2013-07-10 17:34:26,326 qsub job
+2013-07-10 17:34:26,380 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:34:26,381 complete one job
+2013-07-10 17:35:20,399 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:35:20,399 complete one job
+2013-07-10 17:35:31,617 qsub job
+2013-07-10 17:42:00,224 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-10 17:42:00,225 Established connection to host localhost, port 61613
+2013-07-10 17:42:00,225 cluster subscribes queue /queue/cluster
+2013-07-10 17:42:00,225 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-10 17:42:16,233 Sent message from cluster to /queue/cluster-completed
+2013-07-10 17:42:16,233 complete one job
+2013-07-10 17:42:26,942 qsub job
+2013-07-10 18:05:52,178 qsub job
+2013-07-10 18:05:52,774 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:05:52,774 complete one job
+2013-07-10 18:08:05,520 qsub job
+2013-07-10 18:08:06,827 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:08:06,827 complete one job
+2013-07-10 18:09:41,007 qsub job
+2013-07-10 18:09:42,869 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:09:42,869 complete one job
+2013-07-10 18:12:32,937 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:12:32,937 complete one job
+2013-07-10 18:12:32,951 qsub job
+2013-07-10 18:14:10,975 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:14:10,975 complete one job
+2013-07-10 18:14:11,025 qsub job
+2013-07-10 18:15:07,554 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-10 18:15:07,555 Established connection to host localhost, port 61613
+2013-07-10 18:15:07,556 cluster subscribes queue /queue/cluster
+2013-07-10 18:15:07,556 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-10 18:15:26,543 qsub job
+2013-07-10 18:15:27,565 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:15:27,565 complete one job
+2013-07-10 18:16:16,194 qsub job
+2013-07-10 18:16:17,586 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:16:17,586 complete one job
+2013-07-10 18:17:15,284 qsub job
+2013-07-10 18:17:15,610 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:17:15,610 complete one job
+2013-07-10 18:18:08,432 qsub job
+2013-07-10 18:18:09,628 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:18:09,629 complete one job
+2013-07-10 18:19:25,108 qsub job
+2013-07-10 18:19:25,655 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:19:25,655 complete one job
+2013-07-10 18:20:58,566 qsub job
+2013-07-10 18:20:59,696 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:20:59,696 complete one job
+2013-07-10 18:21:51,078 qsub job
+2013-07-10 18:21:51,718 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:21:51,718 complete one job
+2013-07-10 18:24:45,331 qsub job
+2013-07-10 18:24:45,787 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:24:45,787 complete one job
+2013-07-10 18:25:29,244 qsub job
+2013-07-10 18:25:29,802 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:25:29,802 complete one job
+2013-07-10 18:26:00,847 qsub job
+2013-07-10 18:26:01,813 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:26:01,813 complete one job
+2013-07-10 18:26:32,012 qsub job
+2013-07-10 18:26:33,826 Sent message from cluster to /queue/cluster-completed
+2013-07-10 18:26:33,827 complete one job
+2013-07-11 09:48:41,374 Sent message from cluster to /queue/cluster-completed
+2013-07-11 09:48:41,374 complete one job
+2013-07-11 09:48:41,413 qsub job
+2013-07-11 09:50:55,122 qsub job
+2013-07-11 09:50:55,425 Sent message from cluster to /queue/cluster-completed
+2013-07-11 09:50:55,425 complete one job
+2013-07-11 09:52:47,170 qsub job
+2013-07-11 09:52:47,471 Sent message from cluster to /queue/cluster-completed
+2013-07-11 09:52:47,471 complete one job
+2013-07-11 09:55:52,098 qsub job
+2013-07-11 09:55:53,542 Sent message from cluster to /queue/cluster-completed
+2013-07-11 09:55:53,542 complete one job
+2013-07-11 09:59:41,997 qsub job
+2013-07-11 09:59:43,629 Sent message from cluster to /queue/cluster-completed
+2013-07-11 09:59:43,629 complete one job
+2013-07-11 10:02:26,041 qsub job
+2013-07-11 10:02:27,691 Sent message from cluster to /queue/cluster-completed
+2013-07-11 10:02:27,691 complete one job
+2013-07-11 10:03:44,167 qsub job
+2013-07-11 10:03:45,721 Sent message from cluster to /queue/cluster-completed
+2013-07-11 10:03:45,721 complete one job
+2013-07-11 10:05:10,897 qsub job
+2013-07-11 10:05:11,754 Sent message from cluster to /queue/cluster-completed
+2013-07-11 10:05:11,755 complete one job
+2013-07-11 14:15:01,019 qsub job
+2013-07-11 14:19:25,438 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-11 14:19:25,439 Established connection to host localhost, port 61613
+2013-07-11 14:19:25,439 cluster subscribes queue /queue/cluster
+2013-07-11 14:19:25,440 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-11 14:19:44,206 qsub job
+2013-07-11 14:19:45,448 Sent message from cluster to /queue/cluster-completed
+2013-07-11 14:19:45,448 complete one job
+2013-07-11 14:21:01,479 Sent message from cluster to /queue/cluster-completed
+2013-07-11 14:21:01,480 complete one job
+2013-07-11 14:21:12,745 qsub job
+2013-07-11 14:21:28,370 qsub job
+2013-07-11 14:21:29,491 Sent message from cluster to /queue/cluster-completed
+2013-07-11 14:21:29,491 complete one job
+2013-07-11 16:55:29,196 qsub job
+2013-07-11 16:55:30,833 Sent message from cluster to /queue/cluster-completed
+2013-07-11 16:55:30,833 complete one job
+2013-07-11 17:24:45,533 Sent message from cluster to /queue/cluster-completed
+2013-07-11 17:24:45,564 complete one job
+2013-07-11 17:24:52,218 qsub job
+2013-07-12 15:27:02,236 qsub job
+2013-07-12 15:27:02,838 Sent message from cluster to /queue/cluster-completed
+2013-07-12 15:27:02,838 complete one job
+2013-07-12 15:36:45,814 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-12 15:36:45,840 Manager disconnected.
+2013-07-12 16:04:26,050 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-12 16:04:26,064 Established connection to host localhost, port 61613
+2013-07-12 16:04:26,064 admin subscribes queue /queue/submitted
+2013-07-12 16:04:26,064 admin subscribes queue /queue/cluster-completed
+2013-07-12 16:04:26,064 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-12 16:04:35,525 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-12 16:04:35,525 Established connection to host localhost, port 61613
+2013-07-12 16:04:35,526 cluster subscribes queue /queue/cluster
+2013-07-12 16:04:35,526 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-12 16:06:09,865 received job FBP from user1
+2013-07-12 16:06:09,867 Sent message from admin to /queue/cluster
+2013-07-12 16:06:09,868 dispatches job to cluster
+2013-07-12 16:06:23,573 Sent message from cluster to /queue/cluster-completed
+2013-07-12 16:06:23,574 complete one job
+2013-07-12 16:06:23,577 qsub job
+2013-07-12 16:06:23,579 received job FBP from user1
+2013-07-12 16:06:23,579 Sent message from admin to /queue/completed
+2013-07-12 16:06:23,580 starts to gather result from cluster
+2013-07-13 12:14:32,258 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-13 12:14:32,260 Established connection to host localhost, port 61613
+2013-07-13 12:14:32,263 admin subscribes queue /queue/submitted
+2013-07-13 12:14:32,263 admin subscribes queue /queue/cluster-completed
+2013-07-13 12:14:32,263 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-13 12:15:55,467 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-13 12:15:55,468 Established connection to host localhost, port 61613
+2013-07-13 12:15:55,469 cluster subscribes queue /queue/cluster
+2013-07-13 12:15:55,470 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-13 12:23:23,810 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-13 12:23:23,811 Established connection to host localhost, port 61613
+2013-07-13 12:23:23,817 admin subscribes queue /queue/submitted
+2013-07-13 12:23:23,818 admin subscribes queue /queue/cluster-completed
+2013-07-13 12:23:23,818 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-13 12:23:28,719 received job FBP from user1
+2013-07-13 12:23:28,720 Sent message from admin to /queue/cluster
+2013-07-13 12:23:28,720 dispatches job to cluster
+2013-07-13 12:23:30,789 qsub job
+2013-07-13 12:23:54,980 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-13 12:23:54,980 Established connection to host localhost, port 61613
+2013-07-13 12:23:54,982 cluster subscribes queue /queue/cluster
+2013-07-13 12:23:54,982 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-13 12:23:59,804 received job FBP from user1
+2013-07-13 12:23:59,804 Sent message from admin to /queue/cluster
+2013-07-13 12:23:59,804 dispatches job to cluster
+2013-07-13 12:24:06,667 qsub job
+2013-07-13 12:32:46,301 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-13 12:32:46,302 Established connection to host localhost, port 61613
+2013-07-13 12:32:46,303 cluster subscribes queue /queue/cluster
+2013-07-13 12:32:46,303 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-13 12:33:02,914 received job FBP from user1
+2013-07-13 12:33:02,914 Sent message from admin to /queue/cluster
+2013-07-13 12:33:02,914 dispatches job to cluster
+2013-07-13 12:33:08,332 qsub job
+2013-07-14 16:50:00,293 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-14 16:50:00,293 Manager disconnected.
+2013-07-14 17:26:40,484 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-14 17:26:40,485 Established connection to host localhost, port 61613
+2013-07-14 17:26:40,485 admin subscribes queue /queue/submitted
+2013-07-14 17:26:40,485 admin subscribes queue /queue/cluster-completed
+2013-07-14 17:26:40,485 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-14 17:27:25,927 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-14 17:27:25,928 Established connection to host localhost, port 61613
+2013-07-14 17:27:25,928 cluster subscribes queue /queue/cluster
+2013-07-14 17:27:25,928 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-14 17:27:44,377 received job FBP from user1
+2013-07-14 17:27:44,379 Sent message from admin to /queue/cluster
+2013-07-14 17:27:44,379 dispatches job to cluster
+2013-07-14 17:27:49,831 qsub job
+2013-07-14 17:27:49,937 Sent message from cluster to /queue/cluster-completed
+2013-07-14 17:27:49,937 complete one job
+2013-07-14 17:27:49,940 received job FBP from user1
+2013-07-14 17:27:49,940 Sent message from admin to /queue/completed
+2013-07-14 17:27:49,941 starts to gather result from cluster
+2013-07-14 17:30:15,546 received job FBP from user1
+2013-07-14 17:30:15,546 Sent message from admin to /queue/cluster
+2013-07-14 17:30:15,546 dispatches job to cluster
+2013-07-14 17:30:27,711 qsub job
+2013-07-14 17:30:28,004 Sent message from cluster to /queue/cluster-completed
+2013-07-14 17:30:28,004 complete one job
+2013-07-14 17:30:28,007 received job FBP from user1
+2013-07-14 17:30:28,008 Sent message from admin to /queue/completed
+2013-07-14 17:30:28,008 starts to gather result from cluster
+2013-07-16 10:22:11,436 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-16 10:22:11,436 Manager disconnected.
+2013-07-16 10:47:44,470 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-16 10:47:44,471 Established connection to host localhost, port 61613
+2013-07-16 10:47:44,471 admin subscribes queue /queue/submitted
+2013-07-16 10:47:44,471 admin subscribes queue /queue/cluster-completed
+2013-07-16 10:47:44,471 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-16 10:48:11,300 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-16 10:48:11,301 Established connection to host localhost, port 61613
+2013-07-16 10:48:11,302 cluster subscribes queue /queue/cluster
+2013-07-16 10:48:11,302 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-16 10:49:07,001 received job FBP from user1
+2013-07-16 10:49:07,001 Sent message from admin to /queue/cluster
+2013-07-16 10:49:07,001 dispatches job to cluster
+2013-07-16 10:49:07,326 Sent message from cluster to /queue/cluster-completed
+2013-07-16 10:49:07,326 complete one job
+2013-07-16 10:49:07,328 received job FBP from user1
+2013-07-16 10:49:07,328 Sent message from admin to /queue/completed
+2013-07-16 10:49:07,328 starts to gather result from cluster
+2013-07-16 10:49:24,197 qsub job
+2013-07-18 14:52:41,227 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-18 14:52:41,228 Established connection to host localhost, port 61613
+2013-07-18 14:52:41,229 admin subscribes queue /queue/submitted
+2013-07-18 14:52:41,229 admin subscribes queue /queue/cluster-completed
+2013-07-18 14:52:41,229 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-18 14:52:59,624 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-18 14:52:59,624 Manager disconnected.
+2013-07-18 14:53:05,918 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-18 14:53:05,918 Established connection to host localhost, port 61613
+2013-07-18 14:53:05,919 admin subscribes queue /queue/submitted
+2013-07-18 14:53:05,919 admin subscribes queue /queue/cluster-completed
+2013-07-18 14:53:05,919 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-18 14:53:54,765 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-18 14:53:54,766 Established connection to host localhost, port 61613
+2013-07-18 14:53:54,766 cluster subscribes queue /queue/cluster
+2013-07-18 14:53:54,767 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-20 10:19:13,682 Lost connection
+2013-07-20 10:19:13,684 Lost connection
+2013-07-22 16:24:09,724 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 16:24:09,724 Manager disconnected.
+2013-07-22 16:24:30,608 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-22 16:24:30,609 Established connection to host localhost, port 61613
+2013-07-22 16:24:30,609 cluster subscribes queue /queue/cluster
+2013-07-22 16:24:30,609 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-22 16:24:34,123 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 16:24:34,124 Established connection to host localhost, port 61613
+2013-07-22 16:24:34,124 admin subscribes queue /queue/submitted
+2013-07-22 16:24:34,125 admin subscribes queue /queue/cluster-completed
+2013-07-22 16:24:34,125 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-22 16:24:34,162 received job FBP from user1
+2013-07-22 16:24:34,166 Sent message from admin to /queue/cluster
+2013-07-22 16:24:34,167 dispatches job to cluster
+2013-07-22 16:24:34,611 Sent message from cluster to /queue/cluster-completed
+2013-07-22 16:24:34,611 complete one job
+2013-07-22 16:24:34,616 received job FBP from user1
+2013-07-22 16:24:34,616 Sent message from admin to /queue/completed
+2013-07-22 16:24:34,616 starts to gather result from cluster
+2013-07-22 16:24:48,087 qsub job
+2013-07-22 16:26:02,694 received job FBP from user1
+2013-07-22 16:26:02,694 Sent message from admin to /queue/cluster
+2013-07-22 16:26:02,694 dispatches job to cluster
+2013-07-22 16:26:04,652 Sent message from cluster to /queue/cluster-completed
+2013-07-22 16:26:04,653 complete one job
+2013-07-22 16:26:04,656 received job FBP from user1
+2013-07-22 16:26:04,656 Sent message from admin to /queue/completed
+2013-07-22 16:26:04,656 starts to gather result from cluster
+2013-07-22 16:26:07,290 qsub job
+2013-07-22 16:42:53,896 received job FBP from user1
+2013-07-22 16:42:53,897 Sent message from admin to /queue/cluster
+2013-07-22 16:42:53,897 dispatches job to cluster
+2013-07-22 16:42:55,258 qsub job
+2013-07-22 16:43:33,445 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-22 16:43:33,445 Established connection to host localhost, port 61613
+2013-07-22 16:43:33,446 cluster subscribes queue /queue/cluster
+2013-07-22 16:43:33,446 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-22 16:49:18,942 received job FBP from user1
+2013-07-22 16:49:18,943 Sent message from admin to /queue/cluster
+2013-07-22 16:49:18,943 dispatches job to cluster
+2013-07-22 16:49:19,292 qsub job
+2013-07-22 16:49:31,141 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-22 16:49:31,142 Established connection to host localhost, port 61613
+2013-07-22 16:49:31,142 cluster subscribes queue /queue/cluster
+2013-07-22 16:49:31,142 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-22 16:49:52,663 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 16:49:52,663 Manager disconnected.
+2013-07-22 16:49:56,337 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-22 16:49:56,338 Established connection to host localhost, port 61613
+2013-07-22 16:49:56,338 cluster subscribes queue /queue/cluster
+2013-07-22 16:49:56,338 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-22 16:50:01,622 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 16:50:01,622 Established connection to host localhost, port 61613
+2013-07-22 16:50:01,623 admin subscribes queue /queue/submitted
+2013-07-22 16:50:01,623 admin subscribes queue /queue/cluster-completed
+2013-07-22 16:50:01,623 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-22 17:16:48,490 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 17:16:48,490 Established connection to host localhost, port 61613
+2013-07-22 17:16:48,491 admin subscribes queue /queue/submitted
+2013-07-22 17:16:48,491 admin subscribes queue /queue/cluster-completed
+2013-07-22 17:16:48,491 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-22 17:16:49,054 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 17:16:49,054 Manager disconnected.
+2013-07-22 17:25:11,671 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-22 17:25:11,672 Established connection to host localhost, port 61613
+2013-07-22 17:25:11,673 cluster subscribes queue /queue/cluster
+2013-07-22 17:25:11,673 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-22 17:25:14,866 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 17:25:14,867 Established connection to host localhost, port 61613
+2013-07-22 17:25:14,867 admin subscribes queue /queue/submitted
+2013-07-22 17:25:14,867 admin subscribes queue /queue/cluster-completed
+2013-07-22 17:25:14,867 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-22 17:25:17,583 received job FBP from user1
+2013-07-22 17:25:17,586 Sent message from admin to /queue/cluster
+2013-07-22 17:25:17,586 dispatches job to cluster
+2013-07-22 17:25:31,431 qsub job
+2013-07-22 17:25:31,682 Sent message from cluster to /queue/cluster-completed
+2013-07-22 17:25:31,682 complete one job
+2013-07-22 17:25:31,685 received job FBP from user1
+2013-07-22 17:25:31,685 Sent message from admin to /queue/completed
+2013-07-22 17:25:31,686 starts to gather result from cluster
+2013-07-22 22:21:40,221 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-22 22:21:40,265 Manager disconnected.
+2013-07-23 09:19:04,707 Disconnected with broker [('localhost', 61613)], user cluster
+2013-07-23 09:19:04,712 Established connection to host localhost, port 61613
+2013-07-23 09:19:04,713 cluster subscribes queue /queue/cluster
+2013-07-23 09:19:04,713 Set up connection with broker [('localhost', 61613)], user cluster
+2013-07-23 09:19:07,714 Disconnected with broker [('localhost', 61613)], user admin
+2013-07-23 09:19:07,715 Established connection to host localhost, port 61613
+2013-07-23 09:19:07,715 admin subscribes queue /queue/submitted
+2013-07-23 09:19:07,715 admin subscribes queue /queue/cluster-completed
+2013-07-23 09:19:07,716 Set up connection with broker [('localhost', 61613)], user admin
+2013-07-23 11:32:48,669 received job FBP from user1
+2013-07-23 11:32:48,673 Sent message from admin to /queue/cluster
+2013-07-23 11:32:48,674 dispatches job to cluster
+2013-07-23 11:32:50,139 Sent message from cluster to /queue/cluster-completed
+2013-07-23 11:32:50,139 complete one job
+2013-07-23 11:32:50,141 received job FBP from user1
+2013-07-23 11:32:50,141 Sent message from admin to /queue/completed
+2013-07-23 11:32:50,142 starts to gather result from cluster
+2013-07-23 11:33:09,118 qsub job
+2013-07-23 11:41:48,191 received job FBP from user1
+2013-07-23 11:41:48,191 Sent message from admin to /queue/cluster
+2013-07-23 11:41:48,191 dispatches job to cluster
+2013-07-23 11:41:53,047 qsub job
+2013-07-23 11:41:54,366 Sent message from cluster to /queue/cluster-completed
+2013-07-23 11:41:54,366 complete one job
+2013-07-23 11:41:54,368 received job FBP from user1
+2013-07-23 11:41:54,368 Sent message from admin to /queue/completed
+2013-07-23 11:41:54,368 starts to gather result from cluster
+2013-07-23 13:50:03,114 received job FBP from user1
+2013-07-23 13:50:03,117 Sent message from admin to /queue/cluster
+2013-07-23 13:50:03,118 dispatches job to cluster
+2013-07-23 13:50:05,095 Sent message from cluster to /queue/cluster-completed
+2013-07-23 13:50:05,096 complete one job
+2013-07-23 13:50:05,097 received job FBP from user1
+2013-07-23 13:50:05,098 Sent message from admin to /queue/completed
+2013-07-23 13:50:05,098 starts to gather result from cluster
+2013-07-23 13:50:09,357 qsub job
+2013-07-23 13:54:18,213 received job FBP from user1
+2013-07-23 13:54:18,214 Sent message from admin to /queue/cluster
+2013-07-23 13:54:18,214 dispatches job to cluster
+2013-07-23 13:54:19,201 Sent message from cluster to /queue/cluster-completed
+2013-07-23 13:54:19,201 complete one job
+2013-07-23 13:54:19,202 received job FBP from user1
+2013-07-23 13:54:19,203 Sent message from admin to /queue/completed
+2013-07-23 13:54:19,203 starts to gather result from cluster
+2013-07-23 13:54:22,705 qsub job
+2013-07-23 14:23:18,538 received job FBP from user1
+2013-07-23 14:23:18,541 Sent message from admin to /queue/cluster
+2013-07-23 14:23:18,542 dispatches job to cluster
+2013-07-23 14:23:23,081 qsub job
+2013-07-23 14:23:23,895 Sent message from cluster to /queue/cluster-completed
+2013-07-23 14:23:23,895 complete one job
+2013-07-23 14:23:23,897 received job FBP from user1
+2013-07-23 14:23:23,897 Sent message from admin to /queue/completed
+2013-07-23 14:23:23,897 starts to gather result from cluster
+2013-07-23 14:59:13,368 received job FBP from user1
+2013-07-23 14:59:13,368 Sent message from admin to /queue/cluster
+2013-07-23 14:59:13,368 dispatches job to cluster
+2013-07-23 14:59:14,705 Sent message from cluster to /queue/cluster-completed
+2013-07-23 14:59:14,705 complete one job
+2013-07-23 14:59:14,706 received job FBP from user1
+2013-07-23 14:59:14,707 Sent message from admin to /queue/completed
+2013-07-23 14:59:14,707 starts to gather result from cluster
+2013-07-23 14:59:17,253 qsub job
+2013-07-23 15:00:15,367 received job FBP from user1
+2013-07-23 15:00:15,370 Sent message from admin to /queue/cluster
+2013-07-23 15:00:15,371 dispatches job to cluster
+2013-07-23 15:00:16,731 Sent message from cluster to /queue/cluster-completed
+2013-07-23 15:00:16,732 complete one job
+2013-07-23 15:00:16,733 received job FBP from user1
+2013-07-23 15:00:16,733 Sent message from admin to /queue/completed
+2013-07-23 15:00:16,733 starts to gather result from cluster
+2013-07-23 15:00:18,545 qsub job
+2013-07-23 15:03:33,857 received job FBP from user1
+2013-07-23 15:03:33,857 Sent message from admin to /queue/cluster
+2013-07-23 15:03:33,857 dispatches job to cluster
+2013-07-23 15:03:34,805 Sent message from cluster to /queue/cluster-completed
+2013-07-23 15:03:34,806 complete one job
+2013-07-23 15:03:34,808 received job FBP from user1
+2013-07-23 15:03:34,808 Sent message from admin to /queue/completed
+2013-07-23 15:03:34,808 starts to gather result from cluster
+2013-07-23 15:03:37,790 qsub job
+2013-07-23 15:04:55,928 received job FBP from user1
+2013-07-23 15:04:55,928 Sent message from admin to /queue/cluster
+2013-07-23 15:04:55,928 dispatches job to cluster
+2013-07-23 15:04:56,834 Sent message from cluster to /queue/cluster-completed
+2013-07-23 15:04:56,834 complete one job
+2013-07-23 15:04:56,836 received job FBP from user1
+2013-07-23 15:04:56,836 Sent message from admin to /queue/completed
+2013-07-23 15:04:56,836 starts to gather result from cluster
+2013-07-23 15:04:59,241 qsub job
+2013-07-23 15:07:45,921 received job FBP from user1
+2013-07-23 15:07:45,921 Sent message from admin to /queue/cluster
+2013-07-23 15:07:45,921 dispatches job to cluster
+2013-07-23 15:07:46,899 Sent message from cluster to /queue/cluster-completed
+2013-07-23 15:07:46,899 complete one job
+2013-07-23 15:07:46,902 received job FBP from user1
+2013-07-23 15:07:46,902 Sent message from admin to /queue/completed
+2013-07-23 15:07:46,902 starts to gather result from cluster
+2013-07-23 15:07:49,122 qsub job
+2013-07-23 15:09:01,154 received job FBP from user1
+2013-07-23 15:09:01,155 Sent message from admin to /queue/cluster
+2013-07-23 15:09:01,155 dispatches job to cluster
+2013-07-23 15:09:05,704 qsub job
+2013-07-23 15:09:06,934 Sent message from cluster to /queue/cluster-completed
+2013-07-23 15:09:06,935 complete one job
+2013-07-23 15:09:06,936 received job FBP from user1
+2013-07-23 15:09:06,936 Sent message from admin to /queue/completed
+2013-07-23 15:09:06,936 starts to gather result from cluster
+2013-07-23 15:10:57,088 received job FBP from user1
+2013-07-23 15:10:57,088 Sent message from admin to /queue/cluster
+2013-07-23 15:10:57,088 dispatches job to cluster
+2013-07-23 15:11:01,479 qsub job
+2013-07-23 15:11:02,983 Sent message from cluster to /queue/cluster-completed
+2013-07-23 15:11:02,983 complete one job
+2013-07-23 15:11:02,985 received job FBP from user1
+2013-07-23 15:11:02,985 Sent message from admin to /queue/completed
+2013-07-23 15:11:02,985 starts to gather result from cluster
+2013-07-23 15:12:25,758 received job FBP from user1
+2013-07-23 15:12:25,758 Sent message from admin to /queue/cluster
+2013-07-23 15:12:25,758 dispatches job to cluster
+2013-07-23 15:12:27,021 Sent message from cluster to /queue/cluster-completed
+2013-07-23 15:12:27,021 complete one job
+2013-07-23 15:12:27,022 received job FBP from user1
+2013-07-23 15:12:27,023 Sent message from admin to /queue/completed
+2013-07-23 15:12:27,023 starts to gather result from cluster
+2013-07-23 15:12:30,203 qsub job
+2013-07-24 15:38:48,906 received job FBP from user1
+2013-07-24 15:38:48,928 Sent message from admin to /queue/cluster
+2013-07-24 15:38:48,929 dispatches job to cluster
+2013-07-24 15:38:49,816 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:38:49,816 complete one job
+2013-07-24 15:38:49,818 received job FBP from user1
+2013-07-24 15:38:49,818 Sent message from admin to /queue/completed
+2013-07-24 15:38:49,818 starts to gather result from cluster
+2013-07-24 15:38:56,506 qsub job
+2013-07-24 15:40:10,364 received job FBP from user1
+2013-07-24 15:40:10,364 Sent message from admin to /queue/cluster
+2013-07-24 15:40:10,364 dispatches job to cluster
+2013-07-24 15:40:11,851 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:40:11,851 complete one job
+2013-07-24 15:40:11,854 received job FBP from user1
+2013-07-24 15:40:11,854 Sent message from admin to /queue/completed
+2013-07-24 15:40:11,854 starts to gather result from cluster
+2013-07-24 15:40:14,093 qsub job
+2013-07-24 15:40:37,979 received job FBP from user1
+2013-07-24 15:40:37,979 Sent message from admin to /queue/cluster
+2013-07-24 15:40:37,979 dispatches job to cluster
+2013-07-24 15:40:39,863 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:40:39,863 complete one job
+2013-07-24 15:40:39,865 received job FBP from user1
+2013-07-24 15:40:39,865 Sent message from admin to /queue/completed
+2013-07-24 15:40:39,865 starts to gather result from cluster
+2013-07-24 15:40:41,796 qsub job
+2013-07-24 15:41:03,914 received job FBP from user1
+2013-07-24 15:41:03,915 Sent message from admin to /queue/cluster
+2013-07-24 15:41:03,915 dispatches job to cluster
+2013-07-24 15:41:05,876 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:41:05,876 complete one job
+2013-07-24 15:41:05,877 received job FBP from user1
+2013-07-24 15:41:05,878 Sent message from admin to /queue/completed
+2013-07-24 15:41:05,878 starts to gather result from cluster
+2013-07-24 15:41:08,334 qsub job
+2013-07-24 15:41:58,185 received job FBP from user1
+2013-07-24 15:41:58,185 Sent message from admin to /queue/cluster
+2013-07-24 15:41:58,185 dispatches job to cluster
+2013-07-24 15:41:59,900 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:41:59,900 complete one job
+2013-07-24 15:41:59,901 received job FBP from user1
+2013-07-24 15:41:59,901 Sent message from admin to /queue/completed
+2013-07-24 15:41:59,901 starts to gather result from cluster
+2013-07-24 15:42:01,886 qsub job
+2013-07-24 15:45:36,204 received job FBP from user1
+2013-07-24 15:45:36,204 Sent message from admin to /queue/cluster
+2013-07-24 15:45:36,204 dispatches job to cluster
+2013-07-24 15:45:37,989 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:45:37,990 complete one job
+2013-07-24 15:45:37,991 received job FBP from user1
+2013-07-24 15:45:37,991 Sent message from admin to /queue/completed
+2013-07-24 15:45:37,991 starts to gather result from cluster
+2013-07-24 15:45:40,780 qsub job
+2013-07-24 15:46:34,272 received job FBP from user1
+2013-07-24 15:46:34,272 Sent message from admin to /queue/cluster
+2013-07-24 15:46:34,272 dispatches job to cluster
+2013-07-24 15:46:36,015 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:46:36,015 complete one job
+2013-07-24 15:46:36,016 received job FBP from user1
+2013-07-24 15:46:36,016 Sent message from admin to /queue/completed
+2013-07-24 15:46:36,016 starts to gather result from cluster
+2013-07-24 15:46:37,990 qsub job
+2013-07-24 15:47:47,181 received job FBP from user1
+2013-07-24 15:47:47,181 Sent message from admin to /queue/cluster
+2013-07-24 15:47:47,181 dispatches job to cluster
+2013-07-24 15:47:48,043 Sent message from cluster to /queue/cluster-completed
+2013-07-24 15:47:48,043 complete one job
+2013-07-24 15:47:48,045 received job FBP from user1
+2013-07-24 15:47:48,045 Sent message from admin to /queue/completed
+2013-07-24 15:47:48,045 starts to gather result from cluster
+2013-07-24 15:47:51,162 qsub job
+2013-07-24 16:11:21,344 received job FBP from user1
+2013-07-24 16:11:21,344 Sent message from admin to /queue/cluster
+2013-07-24 16:11:21,344 dispatches job to cluster
+2013-07-24 16:11:22,634 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:11:22,635 complete one job
+2013-07-24 16:11:22,636 received job FBP from user1
+2013-07-24 16:11:22,636 Sent message from admin to /queue/completed
+2013-07-24 16:11:22,636 starts to gather result from cluster
+2013-07-24 16:11:28,378 qsub job
+2013-07-24 16:14:02,420 received job FBP from user1
+2013-07-24 16:14:02,420 Sent message from admin to /queue/cluster
+2013-07-24 16:14:02,420 dispatches job to cluster
+2013-07-24 16:14:02,698 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:14:02,698 complete one job
+2013-07-24 16:14:02,700 received job FBP from user1
+2013-07-24 16:14:02,701 Sent message from admin to /queue/completed
+2013-07-24 16:14:02,701 starts to gather result from cluster
+2013-07-24 16:14:07,359 qsub job
+2013-07-24 16:15:51,130 received job FBP from user1
+2013-07-24 16:15:51,130 Sent message from admin to /queue/cluster
+2013-07-24 16:15:51,130 dispatches job to cluster
+2013-07-24 16:15:54,942 qsub job
+2013-07-24 16:15:56,750 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:15:56,750 complete one job
+2013-07-24 16:15:56,752 received job FBP from user1
+2013-07-24 16:15:56,752 Sent message from admin to /queue/completed
+2013-07-24 16:15:56,752 starts to gather result from cluster
+2013-07-24 16:23:52,710 received job FBP from user1
+2013-07-24 16:23:52,716 Sent message from admin to /queue/cluster
+2013-07-24 16:23:52,716 dispatches job to cluster
+2013-07-24 16:23:56,823 qsub job
+2013-07-24 16:23:56,952 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:23:56,952 complete one job
+2013-07-24 16:23:56,953 received job FBP from user1
+2013-07-24 16:23:56,954 Sent message from admin to /queue/completed
+2013-07-24 16:23:56,954 starts to gather result from cluster
+2013-07-24 16:24:51,656 received job FBP from user1
+2013-07-24 16:24:51,657 Sent message from admin to /queue/cluster
+2013-07-24 16:24:51,657 dispatches job to cluster
+2013-07-24 16:24:55,340 qsub job
+2013-07-24 16:24:56,976 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:24:56,976 complete one job
+2013-07-24 16:24:56,978 received job FBP from user1
+2013-07-24 16:24:56,978 Sent message from admin to /queue/completed
+2013-07-24 16:24:56,978 starts to gather result from cluster
+2013-07-24 16:30:22,534 received job FBP from user1
+2013-07-24 16:30:22,535 Sent message from admin to /queue/cluster
+2013-07-24 16:30:22,535 dispatches job to cluster
+2013-07-24 16:30:33,808 qsub job
+2013-07-24 16:30:35,123 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:30:35,123 complete one job
+2013-07-24 16:30:35,125 received job FBP from user1
+2013-07-24 16:30:35,125 Sent message from admin to /queue/completed
+2013-07-24 16:30:35,125 starts to gather result from cluster
+2013-07-24 16:36:08,921 received job FBP from user1
+2013-07-24 16:36:08,922 Sent message from admin to /queue/cluster
+2013-07-24 16:36:08,922 dispatches job to cluster
+2013-07-24 16:36:19,666 qsub job
+2013-07-24 16:36:21,272 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:36:21,273 complete one job
+2013-07-24 16:36:21,275 received job FBP from user1
+2013-07-24 16:36:21,275 Sent message from admin to /queue/completed
+2013-07-24 16:36:21,275 starts to gather result from cluster
+2013-07-24 16:37:09,802 received job FBP from user1
+2013-07-24 16:37:09,802 Sent message from admin to /queue/cluster
+2013-07-24 16:37:09,802 dispatches job to cluster
+2013-07-24 16:37:13,476 qsub job
+2013-07-24 16:37:15,299 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:37:15,299 complete one job
+2013-07-24 16:37:15,302 received job FBP from user1
+2013-07-24 16:37:15,303 Sent message from admin to /queue/completed
+2013-07-24 16:37:15,303 starts to gather result from cluster
+2013-07-24 16:41:10,569 received job FBP from user1
+2013-07-24 16:41:10,569 Sent message from admin to /queue/cluster
+2013-07-24 16:41:10,569 dispatches job to cluster
+2013-07-24 16:41:14,069 qsub job
+2013-07-24 16:41:15,395 Sent message from cluster to /queue/cluster-completed
+2013-07-24 16:41:15,395 complete one job
+2013-07-24 16:41:15,399 received job FBP from user1
+2013-07-24 16:41:15,399 Sent message from admin to /queue/completed
+2013-07-24 16:41:15,399 starts to gather result from cluster
+2013-07-24 22:03:46,847 received job FBP from user1
+2013-07-24 22:03:46,851 Sent message from admin to /queue/cluster
+2013-07-24 22:03:46,852 dispatches job to cluster
+2013-07-24 22:03:46,905 Sent message from cluster to /queue/cluster-completed
+2013-07-24 22:03:46,905 complete one job
+2013-07-24 22:03:46,908 received job FBP from user1
+2013-07-24 22:03:46,908 Sent message from admin to /queue/completed
+2013-07-24 22:03:46,908 starts to gather result from cluster
+2013-07-24 22:03:51,773 qsub job
+2013-07-24 22:06:03,006 received job FBP from user1
+2013-07-24 22:06:03,006 Sent message from admin to /queue/cluster
+2013-07-24 22:06:03,006 dispatches job to cluster
+2013-07-24 22:06:04,963 Sent message from cluster to /queue/cluster-completed
+2013-07-24 22:06:04,963 complete one job
+2013-07-24 22:06:04,965 received job FBP from user1
+2013-07-24 22:06:04,965 Sent message from admin to /queue/completed
+2013-07-24 22:06:04,965 starts to gather result from cluster
+2013-07-24 22:06:05,402 qsub job
+2013-07-25 10:05:58,454 received job FBP from user1
+2013-07-25 10:05:58,474 Sent message from admin to /queue/cluster
+2013-07-25 10:05:58,474 dispatches job to cluster
+2013-07-25 10:05:59,141 Sent message from cluster to /queue/cluster-completed
+2013-07-25 10:05:59,141 complete one job
+2013-07-25 10:05:59,142 received job FBP from user1
+2013-07-25 10:05:59,143 Sent message from admin to /queue/completed
+2013-07-25 10:05:59,143 starts to gather result from cluster
+2013-07-25 10:06:04,973 qsub job
+2013-07-25 10:10:40,644 received job FBP from user2
+2013-07-25 10:10:40,644 Sent message from admin to /queue/cluster
+2013-07-25 10:10:40,644 dispatches job to cluster
+2013-07-25 10:10:45,591 qsub job
+2013-07-25 10:10:47,252 Sent message from cluster to /queue/cluster-completed
+2013-07-25 10:10:47,252 complete one job
+2013-07-25 10:10:47,254 received job FBP from user2
+2013-07-25 10:10:47,254 Sent message from admin to /queue/completed
+2013-07-25 10:10:47,254 starts to gather result from cluster
+2013-07-25 10:25:44,269 received job FBP from user1
+2013-07-25 10:25:44,269 Sent message from admin to /queue/cluster
+2013-07-25 10:25:44,269 dispatches job to cluster
+2013-07-25 10:25:45,616 Sent message from cluster to /queue/cluster-completed
+2013-07-25 10:25:45,617 complete one job
+2013-07-25 10:25:45,618 received job FBP from user1
+2013-07-25 10:25:45,619 Sent message from admin to /queue/completed
+2013-07-25 10:25:45,619 starts to gather result from cluster
+2013-07-25 10:25:48,235 qsub job
+2013-07-25 10:37:09,121 received job FBP from user1
+2013-07-25 10:37:09,121 Sent message from admin to /queue/cluster
+2013-07-25 10:37:09,121 dispatches job to cluster
+2013-07-25 10:37:12,981 qsub job
+2013-07-25 10:37:13,874 Sent message from cluster to /queue/cluster-completed
+2013-07-25 10:37:13,874 complete one job
+2013-07-25 10:37:13,875 received job FBP from user1
+2013-07-25 10:37:13,876 Sent message from admin to /queue/completed
+2013-07-25 10:37:13,876 starts to gather result from cluster
+2013-07-25 10:40:48,124 received job FBP from user1
+2013-07-25 10:40:48,125 Sent message from admin to /queue/cluster
+2013-07-25 10:40:48,125 dispatches job to cluster
+2013-07-25 10:40:49,953 Sent message from cluster to /queue/cluster-completed
+2013-07-25 10:40:49,954 complete one job
+2013-07-25 10:40:49,955 received job FBP from user1
+2013-07-25 10:40:49,955 Sent message from admin to /queue/completed
+2013-07-25 10:40:49,955 starts to gather result from cluster
+2013-07-25 10:40:52,446 qsub job
+2013-07-25 10:55:48,433 received job FBP from user1
+2013-07-25 10:55:48,434 Sent message from admin to /queue/cluster
+2013-07-25 10:55:48,434 dispatches job to cluster
+2013-07-25 10:55:50,286 Sent message from cluster to /queue/cluster-completed
+2013-07-25 10:55:50,286 complete one job
+2013-07-25 10:55:50,289 received job FBP from user1
+2013-07-25 10:55:50,289 Sent message from admin to /queue/completed
+2013-07-25 10:55:50,289 starts to gather result from cluster
+2013-07-25 10:55:52,888 qsub job
+2013-07-25 10:57:19,272 received job FBP from userli
+2013-07-25 10:57:19,272 Sent message from admin to /queue/cluster
+2013-07-25 10:57:19,272 dispatches job to cluster
+2013-07-25 10:57:21,668 qsub job
+2013-07-25 10:57:22,321 Sent message from cluster to /queue/cluster-completed
+2013-07-25 10:57:22,321 complete one job
+2013-07-25 10:57:22,323 received job FBP from userli
+2013-07-25 10:57:22,323 Sent message from admin to /queue/completed
+2013-07-25 10:57:22,324 starts to gather result from cluster
+2013-07-25 11:04:41,459 received job FBP from user1
+2013-07-25 11:04:41,460 Sent message from admin to /queue/cluster
+2013-07-25 11:04:41,460 dispatches job to cluster
+2013-07-25 11:04:42,492 Sent message from cluster to /queue/cluster-completed
+2013-07-25 11:04:42,492 complete one job
+2013-07-25 11:04:42,493 received job FBP from user1
+2013-07-25 11:04:42,493 Sent message from admin to /queue/completed
+2013-07-25 11:04:42,493 starts to gather result from cluster
+2013-07-25 11:04:46,406 qsub job
+2013-07-25 11:06:40,253 received job FBP from userli
+2013-07-25 11:06:40,257 Sent message from admin to /queue/cluster
+2013-07-25 11:06:40,257 dispatches job to cluster
+2013-07-25 11:06:43,940 qsub job
+2013-07-25 11:06:44,535 Sent message from cluster to /queue/cluster-completed
+2013-07-25 11:06:44,535 complete one job
+2013-07-25 11:06:44,537 received job FBP from userli
+2013-07-25 11:06:44,537 Sent message from admin to /queue/completed
+2013-07-25 11:06:44,537 starts to gather result from cluster
+2013-07-25 11:09:03,214 received job FBP from userli
+2013-07-25 11:09:03,214 Sent message from admin to /queue/cluster
+2013-07-25 11:09:03,214 dispatches job to cluster
+2013-07-25 11:09:14,124 qsub job
+2013-07-25 11:09:14,596 Sent message from cluster to /queue/cluster-completed
+2013-07-25 11:09:14,596 complete one job
+2013-07-25 11:09:14,600 received job FBP from userli
+2013-07-25 11:09:14,600 Sent message from admin to /queue/completed
+2013-07-25 11:09:14,600 starts to gather result from cluster
+2013-07-25 11:11:21,925 received job FBP from userli
+2013-07-25 11:11:21,925 Sent message from admin to /queue/cluster
+2013-07-25 11:11:21,925 dispatches job to cluster
+2013-07-25 11:11:22,647 Sent message from cluster to /queue/cluster-completed
+2013-07-25 11:11:22,647 complete one job
+2013-07-25 11:11:22,649 received job FBP from userli
+2013-07-25 11:11:22,649 Sent message from admin to /queue/completed
+2013-07-25 11:11:22,649 starts to gather result from cluster
+2013-07-25 11:11:33,029 qsub job
