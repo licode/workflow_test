@@ -115,6 +115,7 @@ TEMPLATE_DIRS = (
     '../my_test/templates',
     '../my_test/article/templates',
     '../my_test/dpc/templates',
+    '../my_test/templates/tools',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -133,6 +134,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'article',
     'dpc',
+    'main',
+    'job_manager',
     #'fluorescence_fit',
     #'WorkflowPrototype',
 )
