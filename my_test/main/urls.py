@@ -20,8 +20,13 @@ class RunView(TemplateView):
 
         HR = HistoryRender()
 
+        job_all = JobData.objects.all()
+        job_now = JobData.objects.get(id=len(job_all))
+        filename = "user1_"+str(job_now.job_id)+"_"+str(job_now.tool_id)+".jpeg"
+
         return {'menu': tb.toolbox.content,
-                'history' : HR.return_content}
+                'history' : HR.return_content,
+                'output': filename}
 
 # This includes all url dispatching except default admin/account
 urlpatterns = patterns('',

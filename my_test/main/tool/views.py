@@ -6,11 +6,13 @@ from django import forms
 import main
 from main.save_data import SaveToDatabase
 from main.history_render import HistoryRender
+from job_manager.job_wrapper import JobWrapper
 
 
 FIELD_TYPES = {
     "float": forms.FloatField,
-    "int": forms.IntegerField
+    "int": forms.IntegerField,
+    "char": forms.CharField
 }
 
 def generate_form(id):
@@ -46,6 +48,8 @@ class ToolView(View):
             ######
 
             ###run jobs###
+            JW = JobWrapper()
+            JW.run_job()
             #########
 
             return HttpResponseRedirect('/tool_run/' + kwargs['id'] + "/")
