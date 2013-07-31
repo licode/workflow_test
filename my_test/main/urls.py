@@ -11,7 +11,7 @@ class MainView(TemplateView):
     def get_context_data(self, **kwargs):
         HR = HistoryRender()
         return {'menu': tb.toolbox.content,
-                'arg': HR.return_content}
+                'history': HR.return_content}
 
 class RunView(TemplateView):
     template_name = "run_notice.html"
@@ -21,7 +21,7 @@ class RunView(TemplateView):
         HR = HistoryRender()
 
         return {'menu': tb.toolbox.content,
-                'arg' : HR.return_content}
+                'history' : HR.return_content}
 
 # This includes all url dispatching except default admin/account
 urlpatterns = patterns('',

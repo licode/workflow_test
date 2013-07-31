@@ -4,8 +4,9 @@ from django.http import HttpResponseRedirect
 #from main import toolbox
 from django import forms
 import main
-#from main.models import ToolData, JobData
 from main.save_data import SaveToDatabase
+from main.history_render import HistoryRender
+
 
 FIELD_TYPES = {
     "float": forms.FloatField,
@@ -57,7 +58,9 @@ class ToolView(View):
     #def get_success_url(self):
     #    return '/tool_run/' + self.tool_id
     def get_context_data(self):
-        context = {'menu': main.toolbox.toolbox.content}
+        HR = HistoryRender()
+        context = {'menu': main.toolbox.toolbox.content,
+                'history': HR.return_content}
         return context
 
 

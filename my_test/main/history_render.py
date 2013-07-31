@@ -2,7 +2,7 @@ from main.models import ToolData, JobData
 
 class HistoryRender():
     """
-    render history by reading data from database and organize
+    render history by reading data from database and parsing it
     """
 
     def __init__(self):
