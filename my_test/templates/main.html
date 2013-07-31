@@ -17,3 +17,10 @@
 </div>
 
 {% endblock %}
+
+{% block rightbar %}
+<h2 id="right_panel1" align="center" style="color:green">History</h2>
+<div id="right_panel2">
+    {% autoescape off %}{{ history }}{% endautoescape %}
+</div>
+{% endblock %}
