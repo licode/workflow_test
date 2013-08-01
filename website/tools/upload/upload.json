@@ -1,0 +1,11 @@
+{
+"id": "upload",
+"input": [
+    {"label": "Upload file", "type": "file"}
+    ],
+"output": [
+    {"name": 1, "type": "input"}
+    ],
+"command": "python upload.py",
+"title": "Upload data"
+}

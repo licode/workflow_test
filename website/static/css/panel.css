@@ -1,0 +1,22 @@
+.panel_head{
+	height: 38px;
+	width: 100%;
+	border-bottom: solid 1px black;
+	font-size:11pt;
+	font-weight:bold;
+    line-height:40px;
+}
+
+.panel{
+	background-color:#d2cfae;
+	width: 100%;
+	height: 100%;
+}
+
+.panel_tool{
+	position:absolute;
+	top:49px;
+	left:0px;
+	bottom:0px;
+	width: 100%;
+}

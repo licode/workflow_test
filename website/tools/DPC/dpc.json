@@ -1,0 +1,12 @@
+{
+"id": "dpc",
+"input": [
+    {"label": "CX", "type": "float"},
+    {"label": "CY", "type": "float"}
+    ],
+"output": [
+    {"name": "dpc_result", "type": "tiff"}
+    ],
+"command": "python dpc.py",
+"title": "DPC"
+}
