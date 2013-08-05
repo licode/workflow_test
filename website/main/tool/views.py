@@ -26,7 +26,10 @@ def generate_form(tool):
     return type('MyForm', (forms.Form,), fields)
 
 def handle_uploaded_file(f):
-    with open('/results/', 'w') as destination:
+    import os
+    print os.path.abspath(__file__)
+    pathv=os.getcwd()
+    with open(pathv+'/results/a.txt', 'w') as destination:
         for chunk in f.chunks():
             destination.write(chunk)
 
@@ -45,11 +48,12 @@ class ToolView(View):
     def post(self, request, *args, **kwargs):
         tool = main.toolbox.get_tool(kwargs['id'])
         form_class = generate_form(tool)
-        form = form_class(request.POST)
+        
+        form = form_class(request.POST,request.FILES)
         if form.is_valid():
             myform = form.cleaned_data
             if kwargs['id'] == "upload":
-                handle_uploaded_file(request.FILES['file'])
+                handle_uploaded_file(request.FILES['Upload file'])
             else:
                 JR = JobRunner(kwargs['id'],myform)
                 JR.submit_job()
