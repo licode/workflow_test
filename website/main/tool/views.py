@@ -25,6 +25,11 @@ def generate_form(tool):
         fields[_label] = FIELD_TYPES[_type](label = _label)
     return type('MyForm', (forms.Form,), fields)
 
+def handle_uploaded_file(f):
+    with open('/results/', 'w') as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
+
 
 class ToolView(View):
     template_name = 'tool_run.html'
@@ -42,10 +47,12 @@ class ToolView(View):
         form_class = generate_form(tool)
         form = form_class(request.POST)
         if form.is_valid():
-
             myform = form.cleaned_data
-            JR = JobRunner(kwargs['id'],myform)
-            JR.submit_job()
+            if kwargs['id'] == "upload":
+                handle_uploaded_file(request.FILES['file'])
+            else:
+                JR = JobRunner(kwargs['id'],myform)
+                JR.submit_job()
             ###save to database###
             #SD = SaveToDatabase(kwargs['id'])
             #SD.save_all(myform)
