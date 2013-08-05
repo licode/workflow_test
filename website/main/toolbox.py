@@ -47,7 +47,6 @@ class ToolBox:
         return tool
 
 
-
 toolbox = ToolBox("tools/")
 
 def get_tool(id):

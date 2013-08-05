@@ -3,9 +3,10 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django import forms
 import main
-from main.save_data import SaveToDatabase
-from main.history_render import HistoryRender
-from job_manager.job_wrapper import JobWrapper
+#from main.save_data import SaveToDatabase
+#from main.history_render import HistoryRender
+#from job_manager.job_wrapper import JobWrapper
+from main.Runner.job_runner import JobRunner
 
 
 FIELD_TYPES = {
@@ -23,6 +24,7 @@ def generate_form(tool):
         _label = item["label"]
         fields[_label] = FIELD_TYPES[_type](label = _label)
     return type('MyForm', (forms.Form,), fields)
+
 
 class ToolView(View):
     template_name = 'tool_run.html'
@@ -42,19 +44,20 @@ class ToolView(View):
         if form.is_valid():
 
             myform = form.cleaned_data
-
+            JR = JobRunner(kwargs['id'],myform)
+            JR.submit_job()
             ###save to database###
-            SD = SaveToDatabase(kwargs['id'])
-            SD.save_all(myform)
+            #SD = SaveToDatabase(kwargs['id'])
+            #SD.save_all(myform)
             ######
 
             ###run jobs###
-            JW = JobWrapper()
-            JW.run_job()
+            #JW = JobWrapper()
+            #JW.run_job()
             #########
 
-
             return HttpResponseRedirect(request.get_full_path() + "run/")
+        
         context = self.get_context_data()
         context['form'] = form
         context['tool_name'] = tool.title
@@ -63,6 +66,7 @@ class ToolView(View):
     def get_context_data(self):
         context = {}
         return context
+
 
 class Tool:
     def __init__(self, config):

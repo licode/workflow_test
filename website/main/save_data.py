@@ -1,10 +1,9 @@
-from main.models import ToolData, JobData
+from main.models import User, History, Job, ToolData
 import main
 
-class SaveToDatabase(object):
+class JobController(object):
     """
     read data from forms and save them into database:
-        ToolData and JobData
     """
 
     def __init__(self, data_id):
@@ -12,6 +11,30 @@ class SaveToDatabase(object):
         self.data_num = 0    ###current index of tooldata
         return
 
+    def set_user(self):
+        fname = "Mike"
+        lname = "Li"
+        new_user = User.objects.create(first_name=fname,last_name=lname)
+        return new_user
+
+    def set_history(self):
+        history_name = "history"
+        new_user = self.set_user()
+        size_val = 1
+        current = True
+        new_history = History.objects.create(name=history_name,user=new_user,
+                size = size_val, is_current=current)
+        return new_history
+
+    def set_job(self):
+        new_history = self.set_history()
+        tool_name = self.tool.id
+        status = 1
+        new_job = Job.objects.create(history=new_history,tool=tool_name,status=status)
+        return new_job
+
+
+    """
     def save_tooldata(self, formdata):
         dm = ToolData.objects.all()
         self.data_num = len(dm)+1
@@ -43,7 +66,7 @@ class SaveToDatabase(object):
         self.save_jobdata()
         return
 
-
+"""
 
 
 
