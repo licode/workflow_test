@@ -1,0 +1,34 @@
+#! /bin/bash
+
+#########################################################
+## PBS script to run 2D Tomography in parallel on multiple cores 
+##
+## @author: Wei Xu
+## @affiliation: CSC@BNL
+## @date created: Aug. 5, 2013
+## @date last modified: Aug. 5, 2013
+#########################################################
+
+#PBS -S /bin/bash
+#PBS -l nodes=8:ppn=32
+##PBS -j oe
+#PBS -N FBP
+#PBS -o ${PBS_JOBID}.out
+#PBS -e ${PBS_JOBID}.err
+##PBS -M xuw@bnl.gov
+
+# Print date and time
+date
+
+let i=8*32
+
+cd /kbase/home/wxu/WorkflowPrototype/Parallel_Packages/Tomo
+
+/software/openmpi/1.6.2/bin/mpirun -np $i /kbase/home/wxu/WorkflowPrototype/Parallel_Packages/Tomo/filtered_back.py ${file}
+
+date
+
+python /kbase/home/wxu/WorkflowPrototype/Parallel_Packages/Tomo/collect.py ${outfile}
+
+# Print date and time again
+date

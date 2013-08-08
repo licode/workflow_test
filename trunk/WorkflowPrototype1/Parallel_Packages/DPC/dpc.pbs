@@ -1,0 +1,33 @@
+#! /bin/bash
+
+#########################################################
+## PBS script to run DPC in parallel on multiple cores 
+##
+## @author: Wei Xu
+## @affiliation: CSC@BNL
+## @date created: Jun. 30, 2013
+## @date last modified: Jun. 30, 2013
+#########################################################
+
+#PBS -S /bin/bash
+#PBS -N RunDPC
+##PBS -j oe
+##PBS -o ${PBS_JOBID}.out
+##PBS -M xuw@bnl.gov
+
+echo start of dpc.pbs
+
+# Print date and time
+date
+
+cd $PBS_O_HOME/WorkflowPrototype/Parallel_Packages/DPC
+
+# Must be the absolute path to run the .sh
+pbsdsh -v $PBS_O_HOME/WorkflowPrototype/Parallel_Packages/DPC/DPC.sh ${numnode} ${numproc} 
+
+./merge_dpc.py ${numnode} ${numproc} ${namephi} ${namea} ${namegx} ${namegy}
+
+# Print date and time again
+date
+
+echo end of dpc.pbs
