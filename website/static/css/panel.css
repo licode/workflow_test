@@ -4,7 +4,7 @@
 	border-bottom: solid 1px black;
 	font-size:11pt;
 	font-weight:bold;
-    line-height:40px;
+    line-height:38px;
 }
 
 .panel{
@@ -13,10 +13,46 @@
 	height: 100%;
 }
 
-.panel_tool{
+.panel_content{
 	position:absolute;
-	top:49px;
+	top: 39px;
 	left:0px;
 	bottom:0px;
 	width: 100%;
+}
+
+.jobitem{
+	padding: 3px 14px;
+	border-bottom: solid 1px #999999;
+    font-size:9pt;
+}
+.jobnumber{
+	color: #938f5a;
+	float: left;
+}
+.historytitle{
+	height: 30px;
+	line-height: 30px;
+	border-bottom: solid 1px black;
+	color: #938f5a;
+	text-align: center;
+	font-size: 10pt;
+}
+
+.delete_icon, .summarytrigger{
+    cursor:pointer;
+    height:10px;
+    float:right;
+}
+
+.summarytrigger{
+    margin-right:4px;
+}
+
+.jobtitle{
+    clear:both;
+    font-weight:bold;
+}
+.jobtitle a{
+    color:black;
 }

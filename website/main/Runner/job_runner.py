@@ -1,110 +1,77 @@
-from main.models import ToolData, Job, History
+from main.models import ToolData, Job, History, OutputData
 from WorkflowPrototype1.workflow.workflow_user import Workflow_user
 from WorkflowPrototype1.workflow.workflow_setting import brokers
-from main.job.job_controller import JobController
+import main.job
 import json
 
 
 
 class JobRunner(object):
 
-    def __init__(self, data_id, form_data):
+    def __init__(self):
         #self.jobID = jobID
         self.username = "user1"
         #self.message_list = []
         self.tool_list = ["tomography","dpc"]
         self.file_path = "../static/images/"
         self.output_file = ""
-        self.data_id = data_id
-        self.form_data = form_data
-        self.save_job()
+        #self.tool_id = tool_id
+        #self.form_data = form_data
+        #self.save_job()
         return
 
 
-    def save_job(self):
+    def create_job(self, user, tool, form):
         """
         access to database to save data
         """
-        JobC = JobController(self.data_id)
-        JobC.set_tooldata(self.form_data)
-        return
+        job = main.job.JobWrapper()
+        job.create(user, tool, form)
+        return job
 
 
-    def read_jobdata(self):
+    def read_jobdata(self, job):
         """
-        read data from database
-        pass jobID to obtain parameters
+        generate message from a job object
+        The message is used for activeMQ
         """
-        #obj = JobData.objects.all()
-        #jobID = len(obj)   ###return the latest job, there should be better way
-        #cur_obj = JobData.objects.get(id=jobID)
-
-        #tool_id = cur_obj.tool_id
-        #tools = ToolData.objects.filter(this_id=tool_id)
-
-        history_name = "history"
-        history_obj = History.objects.filter(name=history_name)
-        job_obj = Job.objects.filter(history=history_obj)
-        data_obj = ToolData.objects.filter(job=job_obj)
-
-        tool_id = job_obj[0].tool
-        tool_name = tool_id
-
-        dic_val = {}
-
-        for item in data_obj:
-            key_v = item.data_key
-            val_v = item.data_val
-            dic_val[str(key_v)]=val_v
-
-        if tool_name=="tomography":
-
-            algorithm = str(dic_val['algorithm'])
-            angle_start = float(str(dic_val['angle_start']))                
-            angle_end = float(str(dic_val['angle_end']))
-            angle_step = float(str(dic_val['angle_step']))
-
-            username = self.username
-            passcode = "pw"
-
-            output_file = str(username)+"_"+str(tool_id)+".jpeg"
-            self.output_file = output_file
-            information = str(int(angle_start))+" "+str(int(angle_end))+" "+str(int(angle_step))
-            print information
-
-            message = {"instrument": "HXN",         ###save as dictionary for activeMQ
-                "job": algorithm,
-                "user": username,
-                "passcode": passcode,
-                "input_data_file": "filename.png",
-                "output_data_file": self.file_path+output_file,
-                "information": information,
-                "method": ""}
-
-            #job_infor = {"jobname": toolname,
-            #        "job_id":jobID}
-            #self.job_list.append(job_infor)
+        #tool_name = job.tool.id
+        if 'algorithm' in job.params:
+            algorithm = job.params['algorithm']
+        if 'File' in job.params:
+            information = job.params['File']
+        else:
+	    information = ""
+        output = job.tool.output[0]
+        mode = job.tool.mode
+        output_file = output['name'] + str(job.job.id) + "." + output['type']
+        OutputData.objects.create(job = job.job, filename = output_file)
+        return {"instrument": "HXN",         ###save as dictionary for activeMQ
+               "job": algorithm,
+               "user": 'user1',
+               "passcode": 'pw',
+               "input_data_file": "",
+               "output_data_file": output_file,
+               "information": information,
+               "method": "",
+               "mode": mode}
 
 
-        return message
-
-
-    def submit_job(self):
+    def submit_job(self, user, tool, form):
         """
         call ActiveMQ
         """
-        message = self.read_jobdata()
+        job = self.create_job(user, tool, form)
+        if job.tool.id == "upload":
+            job.set_status(main.job.JOB_STATUS.SUCCESS)
+            return
+        message = self.read_jobdata(job)
+        print message
         username = message['user']
         passcode = message['passcode']
         wu = Workflow_user(brokers, username, passcode)
         msg = json.dumps(message)
         wu.submit(msg)
-
-        return
-
-
-
-
 
 def test():
     pass

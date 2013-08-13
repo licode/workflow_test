@@ -5,11 +5,12 @@
 #each tool is a (label, tool_config) pair. tool_config specify the parameters of the tool
 
 menu = [
-    "Early beamlines",
+    "Project beamlines",
     ("HXN", [
         ("Upload data", "upload/upload.json"),
         ("DPC", "DPC/dpc.json"),
-        ("Tomography", "Tomography/tomography.json"),
+        ("Tomography", "tomography/tomography.json"),
+        ("Spectroscopy", "spectroscopy/spectroscopy.json"),
     ]),
     ("SRX", [
         ("Upload data", "upload/upload.json"),
@@ -19,7 +20,7 @@ menu = [
     ("CHX", []),
     ("XPD", []),
     ("IXS", []),
-    "Additional Beamlines",
+    "More Beamlines",
     ("FXI", []),
 ]
 

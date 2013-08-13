@@ -1,12 +1,13 @@
 {
 "id": "dpc",
 "input": [
-    {"label": "CX", "type": "float"},
-    {"label": "CY", "type": "float"}
+    {"label": "File", "type": "select", "suffix": "h5"},
+    {"label": "algorithm", "type": "select", "options": ["DPC"]}
     ],
 "output": [
-    {"name": "dpc_result", "type": "tiff"}
+    {"name": "dpc_result", "type": "png"}
     ],
 "command": "python dpc.py",
-"title": "DPC"
+"mode": "cluster",
+"title": "Differential Phase Contrast Imaging"
 }

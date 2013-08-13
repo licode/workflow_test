@@ -1,9 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-class User(models.Model):
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    pass
 
 class History(models.Model):
     name = models.CharField(max_length=50)
@@ -30,12 +27,17 @@ class ToolData(models.Model):
     """
     generate a much generic way to store data
     """
-    job = models.ForeignKey(Job)               ###set as same value for different tool attributes
-    #tool_name = models.CharField(max_length=200)
+    job = models.ForeignKey(Job)
     data_key = models.CharField(max_length=200)
     data_val = models.CharField(max_length=500)
 
     def __unicode__(self):
         return str(self.job)
+
+
+class OutputData(models.Model):
+	job = models.ForeignKey(Job)
+	filename = models.CharField(max_length=50)
+
 
 

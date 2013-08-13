@@ -2,13 +2,10 @@
 {% load static %}
 
 {% block content %}
-
-<div align="center">
-    <h2> Results and Images </h2>
-    <p><img src="/static/images/{{output}}" width="350" height="350" align="center"></p>
-    <p> <a href="/static/images/{{output}}">Download Images</a>
-</div>
-
+<script>
+	parent.frames['frame_right'].location.reload();
+</script>
+<p>Job has been scheduled to run.
+Please look at the history for results.
+</p>
 {% endblock %}
-
-

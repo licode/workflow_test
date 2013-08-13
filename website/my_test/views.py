@@ -4,22 +4,35 @@ from django.contrib import auth
 from django.core.context_processors import csrf
 from django.contrib.auth.forms import UserCreationForm
 from forms import MyRegistrationForm
+from main.job.user_controller import UserController
 
 
 def login(request):
     c = {}
     c.update(csrf(request))
+    username = request.user.username
+    
+    c['fullname'] = username
+    
     return render_to_response('login.html',c)
 
 
 def auth_view(request):
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
-    user = auth.authenticate(username=username,password=password)
+    #email = request.POST.get('email','')
+    user = auth.authenticate(username=username,
+                             password=password)
 
     if user is not None:
+   
+        ###save user information###
+        #UC = UserController()
+        #UC.set_user_data(firstname=str(username),
+        #                 lastname="Li")
+        #print "name at auth new: ", username
         auth.login(request, user)
-        return HttpResponseRedirect('/articles/all')#/accounts/loggedin')
+        return HttpResponseRedirect('/tool/')
     else:
         return HttpResponseRedirect('/accounts/invalid')
 
@@ -32,6 +45,10 @@ def invalid_login(request):
     return render_to_response('invalid_login.html')
 
 def logout(request):
+    ###clear user information when logout
+    user = request.user.username
+    UC = UserController()
+    UC.clear_current_user(user)
     auth.logout(request)
     return render_to_response('logout.html')
 

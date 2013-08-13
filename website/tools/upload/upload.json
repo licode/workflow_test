@@ -1,7 +1,7 @@
 {
 "id": "upload",
 "input": [
-    {"label": "Upload file", "type": "file"}
+    {"label": "File", "type": "file"}
     ],
 "output": [
     {"name": 1, "type": "input"}

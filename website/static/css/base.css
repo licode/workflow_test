@@ -45,7 +45,7 @@ html,body {
 	font-weight:bold;
 }
 
-.menu{
+.menu, .selected{
 	float: left;
 	height: 100%;
 	border-left: solid 1px black;
@@ -64,6 +64,14 @@ html,body {
 .menu a{
 	text-decoration: none;
 	color: black;
+}
+
+.selected{
+    background-color: black;
+}
+.selected a{
+	text-decoration: none;
+	color: white;
 }
 
 #user{
@@ -100,3 +108,4 @@ html,body {
 * {
 	margin: 0;
 }
+

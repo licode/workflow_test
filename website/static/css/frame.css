@@ -19,6 +19,12 @@
 	font-size:10pt;
 }
 
+.field_input select{
+	border: solid 1px #999999;
+	height: 27px;
+	font-size:10pt;
+}
+
 .field_error{
 	color: red;
 }

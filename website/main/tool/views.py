@@ -1,11 +1,9 @@
 from django.views.generic import TemplateView, View
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.http import HttpResponseRedirect
 from django import forms
 import main
-#from main.save_data import SaveToDatabase
-#from main.history_render import HistoryRender
-#from job_manager.job_wrapper import JobWrapper
+import os
 from main.Runner.job_runner import JobRunner
 
 
@@ -13,31 +11,66 @@ FIELD_TYPES = {
     "float": forms.FloatField,
     "int": forms.IntegerField,
     "file": forms.FileField,
+    "select": forms.ChoiceField,
     "char": forms.CharField
 }
 
+ROOT_DIR = os.getcwd() #this indicates that the system should be run at root directory
+DATA_SOURCE_DIR = ROOT_DIR + "/results/"
+def get_data_source(extension):
+    """
+    This function generate a list of choices used in the tool's select field as data source
+    """
+    import glob
+    files = glob.glob(DATA_SOURCE_DIR + "*." + extension)
+    source = [(f, os.path.basename(f)) for f in files]
+    return source
 
 def generate_form(tool):
+    """
+    This function generate a class that inherits forms.Form. This class represents
+    the form used by the incoming 'tool'.
+    """
     fields = {}
     for item in tool.input:
         _type = item["type"]
         _label = item["label"]
-        fields[_label] = FIELD_TYPES[_type](label = _label)
+        if _type == "select":
+            #process options if provided
+            _choices = []
+            if "suffix" in item:
+                _choices = get_data_source(item["suffix"])
+            if "options" in item:
+                _choices = item["options"]
+		_choices = [(item, item) for item in _choices]
+            fields[_label] = FIELD_TYPES[_type](label = _label, choices = _choices)
+        else:
+            fields[_label] = FIELD_TYPES[_type](label = _label)
     return type('MyForm', (forms.Form,), fields)
 
 def handle_uploaded_file(f):
-    import os
-    print os.path.abspath(__file__)
-    pathv=os.getcwd()
-    with open(pathv+'/results/a.txt', 'w') as destination:
+    with open(DATA_SOURCE_DIR + str(f), 'wb') as destination:
         for chunk in f.chunks():
             destination.write(chunk)
 
 
 class ToolView(View):
     template_name = 'tool_run.html'
-
+    template_name0 = "login_simple.html"
+    
     def get(self, request, *args, **kwargs):
+        
+        #user = request.user
+        #print user
+        user = request.user
+        print "user is: ", len(user.username)
+        if len(user.username)==0 :
+        #    print "find it"
+            #return HttpResponseRedirect('/accounts/login/')
+            #context = {}
+            return render(request, self.template_name0)
+            #return render_to_response(self.template_name0)
+        
         tool = main.toolbox.get_tool(kwargs['id'])
         form_class = generate_form(tool)
         context = self.get_context_data()
@@ -47,26 +80,20 @@ class ToolView(View):
 
     def post(self, request, *args, **kwargs):
         tool = main.toolbox.get_tool(kwargs['id'])
-        form_class = generate_form(tool)
+        form_class = generate_form(tool)            
         
         form = form_class(request.POST,request.FILES)
         if form.is_valid():
             myform = form.cleaned_data
             if kwargs['id'] == "upload":
-                handle_uploaded_file(request.FILES['Upload file'])
-            else:
-                JR = JobRunner(kwargs['id'],myform)
-                JR.submit_job()
-            ###save to database###
-            #SD = SaveToDatabase(kwargs['id'])
-            #SD.save_all(myform)
-            ######
-
-            ###run jobs###
-            #JW = JobWrapper()
-            #JW.run_job()
-            #########
-
+                #need redesign in the future
+                #uploaded file names could be already used
+                #file should be renamed and original file name is stored as a label
+                #besides, this job also need to be recorded in database
+                handle_uploaded_file(request.FILES['File'])
+            
+            JR = JobRunner()
+            JR.submit_job(request.user, tool, myform)
             return HttpResponseRedirect(request.get_full_path() + "run/")
         
         context = self.get_context_data()
@@ -85,6 +112,7 @@ class Tool:
         self.input = None
         self.output = None
         self.command = None
+        self.title = None
         self.load(config)
     def load(self, config):
         if "id" in config:
@@ -100,6 +128,9 @@ class Tool:
 
         if "command" in config:
             self.command = config["command"]
+            
+        if "mode" in config:
+            self.mode = config["mode"]
 
         if "title" in config:
             self.title = config["title"]

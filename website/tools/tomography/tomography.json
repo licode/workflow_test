@@ -1,14 +1,13 @@
 {
 "id": "tomography",
 "input": [
-    {"label": "angle_start", "type": "float"},
-    {"label": "angle_end", "type": "float"},
-    {"label": "angle_step", "type": "float"},
+	{"label": "File", "type": "select", "suffix": "h5"},
     {"label": "algorithm", "type": "char"}
     ],
 "output": [
-    {"name": "tomography_result", "type": "tiff"}
+    {"name": "result", "type": "h5"}
     ],
 "command": "python tomography.py",
+"mode": "cluster",
 "title": "Tomography"
 }
