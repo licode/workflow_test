@@ -44,6 +44,7 @@ class ToolBox:
         #avoid multiple loading of same tool
         if config_file in self.tool_index:
             return self.tool_index[config_file]
+        print config_file
         config = json.load(open(self._tool_dir + config_file))
         tool = Tool(config)
         self.tools[tool.id] = tool

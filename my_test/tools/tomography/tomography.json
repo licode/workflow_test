@@ -1,0 +1,13 @@
+{
+"id": "tomography",
+"input": [
+    {"label": "angle_start", "type": "float"},
+    {"label": "angle_end", "type": "float"},
+    {"label": "angle_step", "type": "float"},
+    {"label": "algorithm", "type": "char"}
+    ],
+"output": [
+    {"name": "tomography_result", "type": "tiff"}
+    ],
+"command": "python tomography.py"
+}

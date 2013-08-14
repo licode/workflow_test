@@ -10,7 +10,7 @@ urlpatterns = patterns('article.views',
     url(r'^run/(?P<article_id>\d+)/$', 'run_job'),
     #url(r'^language/(?P<language>[a-z\-]+)/$', 'language'),
     url(r'^create/$', 'create'),
-    url(r'^like/(?P<article_id>\d+)/$', 'like_article'),
+    #url(r'^like/(?P<article_id>\d+)/$', 'like_article'),
     url(r'^add_comment/(?P<article_id>\d+)/$', 'add_comment'),
     url(r'^see_result/(?P<article_id>\d+)/$', 'see_result'),  #see results after submission
     #url(r'^get_result/(?P<article_id>\d+)/$', 'get_result'),

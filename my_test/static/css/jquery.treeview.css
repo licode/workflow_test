@@ -1,0 +1,27 @@
+.treeview, .treeview ul { 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.treeview ul {
+    background-color: #ccffcc;
+    margin-top: 4px;
+}
+
+.treeview li { 
+    margin: 0;
+    padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+    background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { color: red; cursor: pointer; }
+
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+
+

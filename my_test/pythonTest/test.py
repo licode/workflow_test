@@ -1,0 +1,2 @@
+my = "eclipse"
+print my

@@ -1,9 +1,0 @@
-2013-08-08 09:27:53,393 Disconnected with broker [('localhost', 61613)], user admin
-2013-08-08 09:27:53,393 Established connection to host localhost, port 61613
-2013-08-08 09:27:53,394 admin subscribes queue /queue/submitted
-2013-08-08 09:27:53,394 admin subscribes queue /queue/cluster-completed
-2013-08-08 09:27:53,394 Set up connection with broker [('localhost', 61613)], user admin
-2013-08-08 09:28:14,670 Disconnected with broker [('localhost', 61613)], user cluster
-2013-08-08 09:28:14,671 Established connection to host localhost, port 61613
-2013-08-08 09:28:14,671 cluster subscribes queue /queue/cluster
-2013-08-08 09:28:14,671 Set up connection with broker [('localhost', 61613)], user cluster

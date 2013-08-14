@@ -1,7 +1,7 @@
 from main.models import ToolData, JobData
 import main
 
-class SaveToDatabase(object):
+class JobController(object):
     """
     read data from forms and save them into database:
         ToolData and JobData
@@ -12,7 +12,7 @@ class SaveToDatabase(object):
         self.data_num = 0    ###current index of tooldata
         return
 
-    def save_tooldata(self, formdata):
+    def create_job(self, formdata):
         dm = ToolData.objects.all()
         self.data_num = len(dm)+1
 
